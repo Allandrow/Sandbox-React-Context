@@ -13,7 +13,10 @@ function AuthProvider({ children }: ProviderProps) {
     callback();
   };
 
-  const signout = () => setUserName(null);
+  const signout = (callback: VoidFunction) => {
+    setUserName(null);
+    callback();
+  };
 
   const value = useMemo(() => ({ userName, signin, signout }), [userName]);
 

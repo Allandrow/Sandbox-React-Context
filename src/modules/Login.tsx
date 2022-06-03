@@ -21,7 +21,7 @@ function Login() {
         placeholder="Your userName"
         onChange={(e) => setUserName(e.currentTarget.value)}
       />
-      <button type="button" onClick={handleSubmit}>
+      <button type="submit" onClick={handleSubmit}>
         Sign in
       </button>
     </form>
